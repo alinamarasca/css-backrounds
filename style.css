@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+p {
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 1rem;
+  }
+  a{ 
+    color: green;
+  }
+
+.bg {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+.bg-double {
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+}
+.container{
+  margin: auto;
+  max-width: 1200px;
+}
+.examples{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+.to-right{
+  background: linear-gradient(to right,red, blue);
+  }
+
+  .degree {
+  background: linear-gradient(45deg,red, blue);
+  }
+  .custom{
+    background: linear-gradient(to top,red 30%, blue);
+    }
+  .hard-stop{
+  background: linear-gradient(to top,red 80%, blue 80%);
+    }
+  .hard-stop-degree {
+  background: linear-gradient(-20deg,red 50%, blue 50%);
+    }
+    .repeating {
+      background: repeating-linear-gradient(yellow, purple 2rem);
+        }
+.repeating-specified {
+background: repeating-linear-gradient(30deg,yellow,  purple 50px,lime 60px);
+    }
+.repeating-layering {
+  background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+  rgb(216, 118, 255) repeating-linear-gradient(45deg, rgb(183, 0, 255) 0%, rgb(183,0, 255) 5%, transparent 5%, transparent 10%);
+}
+.repeating-layering-extra{
+  background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+  repeating-linear-gradient(45deg, rgb(183, 0, 255) 0%, rgb(183,0, 255) 5%, transparent 5%, transparent 10%),
+  rgb(216, 118, 255) repeating-linear-gradient(-45deg,rgba(183, 0, 255, 0.5) 0%, rgba(183, 0, 255, 0.5) 5%, transparent 5%, transparent 10%);
+}
+.layering-extra-crazy{
+  background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+  repeating-linear-gradient(45deg, rgb(183, 0, 255) 0%, rgb(183,0, 255) 5%, transparent 5%, transparent 10%, rgb(183, 0, 255) 10%, rgb(183, 0, 255) 11%, transparent 11%, transparent 13% ),
+  rgb(216, 118, 255) repeating-linear-gradient(-45deg,rgba(183, 0, 255, 0.5) 0%, rgba(183, 0, 255, 0.5) 5%, transparent 5%, transparent 10%);
+}
+.layering-extra-crazy-2{
+  background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+  repeating-linear-gradient(45deg, rgba(183, 0, 255, 0.5) 0%, rgba(183,0, 255, 0.5) 5%, transparent 5%, transparent 10%, rgba(183, 0, 255, 0.5) 10%, rgba(183, 0, 255, 0.5) 11%, transparent 11%, transparent 13% ),
+  rgb(216, 118, 255) repeating-linear-gradient(-45deg,rgba(183, 0, 255, 0.5) 0px, rgba(183, 0, 255, 0.5) 15px, transparent 15px, transparent 25px);
+}
+
+.check {
+  background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
